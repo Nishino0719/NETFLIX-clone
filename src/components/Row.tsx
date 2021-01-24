@@ -31,14 +31,18 @@ export const Row = ({ title, fetchUrl, isLargeRow }: Props) => {
 
   return (
     <div className="Row">
-      <h2 className="font-bold text-2xl ml-1">{title}</h2>
-      <div className="Row-posters flex overflow-x-scroll ">
+      <h2 className="font-medium text-xl ml-5 p-1 lg:p-2 text-white">
+        {title}
+      </h2>
+      <div className="Row-posters flex overflow-x-scroll overflow-y-hidden cursor-pointer ml-5">
         {/* ポスターコンテンツ */}
         {movies.map((movie, i) =>
           movie.backdrop_path ? (
             <img
               key={movie.id}
-              className=" transition transform hover:scale-150 max-h-40 hover:max-h-60 hover:z-10 m-1 rounded-md"
+              className={`transition duration-300 transform hover:scale-110 hover:z-10 m-1 lg:m-2 rounded-md ${
+                isLargeRow ? 'max-h-44 lg:max-h-56' : 'max-h-24 lg:max-h-36  '
+              }`}
               src={`${base_url}${
                 isLargeRow ? movie.poster_path : movie.backdrop_path
               }`}

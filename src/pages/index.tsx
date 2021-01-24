@@ -6,16 +6,16 @@ export default function Home() {
     <>
       <div className="App bg-gray-900 m-0">
         <Row
-          title="NETFLIX ORIGINALS"
+          title="Netflixオリジナル作品"
           fetchUrl={requests.feachNetflixOriginals}
           isLargeRow={true}
         />
-        <Row title="Top Rated" fetchUrl={requests.feactTopRated} />
-        <Row title="Action Movies" fetchUrl={requests.feactActionMovies} />
-        <Row title="Comedy Movies" fetchUrl={requests.feactComedyMovies} />
-        <Row title="Horror Movies" fetchUrl={requests.feactHorrorMovies} />
-        <Row title="Romance Movies" fetchUrl={requests.feactRomanceMovies} />
-        <Row title="DOcumentaries" fetchUrl={requests.feactDocumentMovies} />
+        <Row title="人気急上昇の作品" fetchUrl={requests.feactTopRated} />
+        <Row title="アクション" fetchUrl={requests.feactActionMovies} />
+        <Row title="コメディ" fetchUrl={requests.feactComedyMovies} />
+        <Row title="ホラー" fetchUrl={requests.feactHorrorMovies} />
+        <Row title="ロマンス" fetchUrl={requests.feactRomanceMovies} />
+        <Row title="ドキュメンタリー" fetchUrl={requests.feactDocumentMovies} />
       </div>
     </>
   )

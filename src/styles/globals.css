@@ -13,8 +13,8 @@
 }
 
 /* Write your own custom component styles here */
-.btn-blue {
-  @apply p-3 text-white bg-blue-700;
+.btn {
+  @apply bg-gray-800 opacity-60 hover:opacity-40 rounded-md text-white text-xl px-9 py-2 m-1 font-semibold;
 }
 
 /* Start purging... */

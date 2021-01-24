@@ -1,10 +1,12 @@
 import { requests } from '../common/request'
+import { Banner } from '../components/Banner'
 import { Row } from '../components/Row'
 
 export default function Home() {
   return (
     <>
       <div className="App bg-gray-900 m-0">
+        <Banner />
         <Row
           title="Netflixオリジナル作品"
           fetchUrl={requests.feachNetflixOriginals}
